@@ -1,0 +1,58 @@
+				---INSTALAR WSL NO WINDOWS E UTILIZAR A PARTIR DO VS-CODE---
+
+
+1 - Abra o Prompt de Comando como administrador (Clique na lupa de pesquisa, digite Prompt de Comando, clique nele com 
+o botão direito e então "Executar como Administrador";
+
+2 - Insira este comando SEM ASPAS " dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart "
+	
+3 - Aguarde até o fim da configuração e reinicie o computador. 
+
+4 - Após reiniciar, acesse o link https://aka.ms/wslstore e abra a Microsoft Store
+
+5 - Na Microsoft Store, selecione Ubuntu, e, depois, clique em "Obter". Aguarde o download e a instalação. 
+Procure, também, na Microsoft Store, o Windows Terminal e instale. 
+
+6 - Após a instalação do Ubuntu, abra-o e aguarde o fim da configuração.
+
+7 - Ao fim da configuração, no terminal do Ubuntu, será solicitado que você insira um nome de usuário e uma senha. 
+Não esqueça. 
+
+8 - Ao fim da configuração do terminal, insira o comando SEM ASPAS " sudo apt-get update ". Quando solicitado, insira sua
+senha e aperte Enter.
+
+9 - Ainda no terminal do Ubuntu, insira o comando SEM ASPAS " sudo apt-get install valgrind ". Caso solicitado insira sua senha.
+Quando solicitado, aperte "y" e enter, e aguarde o fim da instalação. Depois insira o comando " sudo apt-get install build-essential "
+e repita o processo.
+
+10 - No Visual Code, abra a aba de extenções e no campo de busca digite @exe:"wsl". Instale a extensão "Remote - WSL"
+
+11 - Abra o Windows Terminal e aperte "Ctrl" + "," no teclado. Na tela de configurações, troque o perfil padrão para Ubuntu e clique em Salvar.
+
+12 - Reinicie o computador
+
+
+				--- UTILIZANDO O TERMINAL LINUX PARA EXECUTAR PROGRAMAS --- 
+
+1 - Abra a pasta em que seu programa está salvo, clique com o botão direito, e então clique em "Open in Windows Terminal".
+
+2 - No terminal, use o comando gcc para compilar seu programa. Ex. " gcc -o <NomeDoArquivoDeSaida> <nomedoprograma>.c
+
+3 - Para executar o programa, insira " ./<NomeDoArquivoDeSaida>
+
+4 - Para utilizar o Valgrind, use " valgrind --tool=memcheck --leak-check=full ./<NomeDoArquivoDeSaida> "
+
+
+
+				--- UTILIZANDO O TERMINAL DO VISUAL CODE PARA EXECUTAR PROGRAMAS ---
+
+1 - Caso ainda não possua a extenção "Code Runner" no Visual Code, instale. ("Ctrl" + "Shift" + "X", e pesquise "Code Runner").
+
+2 - Na lateral esquerda do VS Code irá aparecer um simbolo de monitor, o "Remote Explorer". Clique nele e, em seguida, no simbolo
+de conexão a frente do nome do Ubuntu.
+
+3 - Irá abrir a tela do Visual Code rodando no Linux. Agora só escrever os programas, e apertar no play, na parte superior direita, para rodar.
+
+
+
+											Qualquer dúvida, manda lá no joao.ferrete@edu.ufes.br

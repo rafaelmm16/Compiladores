@@ -1,0 +1,19 @@
+valor=3;
+for(i in range (5))
+{
+    if(i<valor)
+   {
+       print("menor que", valor);
+       print("\n");
+   }
+   else if (i == valor)
+   {
+       print("igual a ", valor);
+       print("\n");
+   }
+   else
+  {
+     print("maior que ", valor);
+     print("\n");
+  }
+}

@@ -1,0 +1,2 @@
+ #include <iostream>
+ using namespace std;  int main(){ int valor=3;for(int i = 0; i < 5;i++){if(i<valor){cout <<"menor que" << valor;cout <<"\n";}else if(i==valor){cout <<"igual a " << valor;cout <<"\n";}else {cout <<"maior que " << valor;cout <<"\n";}} return 0;}
